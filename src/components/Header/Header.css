@@ -1,0 +1,8 @@
+.divider {
+    margin-top: 2rem !important;
+}
+
+.divider > .MuiDivider-root {
+    border-width: 0.2rem;
+    border-color: #000;
+}
