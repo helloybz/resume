@@ -1,8 +1,8 @@
 import { forwardRef, useRef } from 'react';
-import { Button, Grid } from "@mui/material";
+import { Fab, Grid } from "@mui/material";
 import { useReactToPrint } from "react-to-print";
+import PrintIcon from '@mui/icons-material/Print';
 import { Resume } from "./Resume"
-import './ResumeWrapper.css';
 
 export function ResumeWrapper() {
     const handlePrint = useReactToPrint({
@@ -14,13 +14,38 @@ export function ResumeWrapper() {
             <Resume />
         </div>
     ));
-    const resumeRef = useRef()
+    const resumeRef = useRef(null)
+
     return (
         <Grid container justifyContent="center">
-            <Grid item xs={12}>
-                <Button onClick={handlePrint}>efef</Button>
-            </Grid>
-            <Grid item xs={8} className="resumeWrapper">
+            <Fab
+                sx={{
+                    position: "fixed",
+                    right: {
+                        "xs": "1rem",
+                        "lg": "3rem"
+                    },
+                    bottom: {
+                        "xs": "1rem",
+                        "lg": "3rem"
+                    },
+                    zIndex: "20",
+                }}
+                onClick={handlePrint}
+            >
+                <PrintIcon />
+            </Fab>
+            <Grid
+                item
+                xs={12}
+                sm={8}
+                sx={{
+                    paddingTop: {
+                        "xs": "0",
+                        "lg": "3rem"
+                    }
+                }}
+            >
                 <ReferredResume ref={resumeRef} />
             </Grid>
         </Grid >
