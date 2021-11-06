@@ -8,7 +8,7 @@ export function ExperienceItem({ category, items }) {
             <Grid item xs={12} component={List} container>
                 {items.map((item, i) => {
                     return (
-                        <Grid item xs={12} container component={ListItem}>
+                        <Grid key={i} item xs={12} container component={ListItem}>
                             <Grid item xs={4}>
                                 {item.what}
                             </Grid>
