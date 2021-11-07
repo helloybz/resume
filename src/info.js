@@ -26,22 +26,25 @@ export var info = {
                 }
             ]
     },
-    "education": [
-        {
-            "name": "아주대학교 대학원",
-            "department": "컴퓨터공학과",
-            "degree": "석사 졸업",
-            "from": "2017.03.",
-            "to": "2019.08."
-        },
-        {
-            "name": "아주대학교 정보통신대학",
-            "department": "미디어학과",
-            "degree": "학사 졸업",
-            "from": "2011.03.",
-            "to": "2017.08."
-        }
-    ],
+    "education": {
+        "title": "학력",
+        "items": [
+            {
+                "name": "아주대학교 대학원",
+                "major": "컴퓨터공학",
+                "degree": "석사",
+                "from": "2017.03.",
+                "to": "2019.08."
+            },
+            {
+                "name": "아주대학교 정보통신대학",
+                "major": "미디어학",
+                "degree": "학사",
+                "from": "2011.03.",
+                "to": "2017.08."
+            }
+        ]
+    },
     "project": [
         {
             "name": "Note Pattern Generator",

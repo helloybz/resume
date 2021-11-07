@@ -1,6 +1,6 @@
 import { Grid, Paper } from "@mui/material";
 
-import { Header, Education, Experience, Project } from './components'
+import { Header, Experience, Project, EducationItem } from './components'
 
 import './Resume.css';
 import { info } from './info.js'
@@ -27,7 +27,7 @@ export function Resume() {
                 </Grid>
                 <Grid item xs={12}>
                     <BodySectionWrapper content={info.career} itemComponent={CareerItem} />
-                    <Education education={info.education} />
+                    <BodySectionWrapper content={info.education} itemComponent={EducationItem} />
                     <Experience experience={info.experience} />
                     <Project project={info.project} />
                 </Grid>
