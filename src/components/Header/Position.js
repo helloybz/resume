@@ -4,11 +4,7 @@ export function Position({ children }) {
     return (
         <Grid item xs={12} component={ListItem} sx={{ padding: "0" }}>
             <Typography sx={{
-                "fontSize": {
-                    "xs": "h5.fontSize",
-                    "md": "h4.fontSize",
-                    "lg": "h3.fontSize",
-                },
+                "fontSize": "2.5rem",
                 "fontWeight": "light"
             }}>{children}</Typography>
         </Grid>

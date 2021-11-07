@@ -4,10 +4,7 @@ export function Name({ children }) {
     return (
         <Grid item xs={12} component={ListItem} sx={{ padding: "0" }}>
             <Typography sx={{
-                "fontSize": {
-                    "xs": "h4.fontSize",
-                    "md": "h2.fontSize",
-                },
+                "fontSize": "4rem",
                 "fontWeight": "bold"
             }}>{children}</Typography>
         </Grid>

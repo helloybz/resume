@@ -11,13 +11,13 @@ export function Header({ name, position, email, github }) {
     return (
         <Grid container alignItems="flex-end">
 
-            <Grid item xs={12} md={6} lg={8} container componet={List}>
+            <Grid item xs={8} container componet={List}>
                 <Name>{name}</Name>
                 <Position>{position}</Position>
             </Grid>
 
             <Grid
-                item xs={12} md={6} lg={4}
+                item xs={4}
                 component={List}
                 container
                 className="contacts"

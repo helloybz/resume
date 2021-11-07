@@ -1,0 +1,5 @@
+@media print {
+    body {
+        width: 210mm 297mm;
+    }
+}

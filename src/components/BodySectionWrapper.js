@@ -2,17 +2,15 @@ import { Grid, List } from "@mui/material";
 
 function Title({ title }) {
     return (
-        <Grid item xs={12}
+        <Grid
+            item xs={12}
             sx={{
-                fontSize: {
-                    "xs": "h5.fontSize",
-                    "md": "h4.fontSize",
-                },
-                fontWeight: {
-                    "xs": "bold",
-                    "lg": "400",
-                }
-            }}>{title}</Grid>
+                "fontSize": "h5.fontSize",
+                "fontWeight": "bold",
+            }}
+        >
+            {title}
+        </Grid>
     )
 }
 
@@ -32,7 +30,7 @@ function ItemList({ items, itemComponent }) {
 }
 export function BodySectionWrapper({ content, itemComponent }) {
     return (
-        <Grid container sx={{ "mt": { "xs": "1.5rem", "md": "1.8rem", "lg": "2.3rem" } }}>
+        <Grid container sx={{ "mt": "1.2rem" }}>
             <Title title={content.title} />
             <ItemList items={content.items} itemComponent={itemComponent} />
         </Grid>

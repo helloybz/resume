@@ -1,10 +1,9 @@
 import { Grid, Paper } from "@mui/material";
 
-import { Header, Experience, Project, EducationItem } from './components'
+import { CareerItem, EducationItem, ExperienceItem, Header } from './components'
 
 import { info } from './info.js'
 import { BodySectionWrapper } from "./components/BodySectionWrapper";
-import { CareerItem } from "./components/CareerItem/CareerItem";
 
 export function Resume() {
     return (
@@ -16,7 +15,7 @@ export function Resume() {
                 className="resumePaper"
                 container
                 sx={{
-                    "padding": "3rem 2rem"
+                    "padding": "1rem 2rem"
                 }}
             >
                 <Grid item xs={12}>
@@ -30,8 +29,7 @@ export function Resume() {
                 <Grid item xs={12}>
                     <BodySectionWrapper content={info.career} itemComponent={CareerItem} />
                     <BodySectionWrapper content={info.education} itemComponent={EducationItem} />
-                    <Experience experience={info.experience} />
-                    <Project project={info.project} />
+                    <BodySectionWrapper content={info.experience} itemComponent={ExperienceItem} />
                 </Grid>
             </Grid>
         </Grid>
