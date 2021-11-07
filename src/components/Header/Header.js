@@ -1,30 +1,36 @@
-import { Divider, Grid, List, ListItem, Typography } from "@mui/material"
+import { Grid, List } from "@mui/material"
 import GitHubIcon from '@mui/icons-material/GitHub';
 import MailIcon from '@mui/icons-material/Mail';
-import "./Header.css"
+
+import { Name } from "./Name.js";
+import { Position } from "./Position.js";
+import { Contact } from "./Contact.js";
+import { HeaderDivider } from "./HeaderDivider.js";
 
 export function Header({ name, position, email, github }) {
     return (
-        <Grid container alignItems="flex-start">
-            <Grid item xs={8} container componet={List}>
-                <Grid xs={12} item componet={ListItem}>
-                    <Typography variant="h2">{name}</Typography>
-                </Grid>
-                <Grid xs={12} item componet={ListItem}>
-                    <Typography variant="h5">{position}</Typography>
-                </Grid>
+        <Grid container alignItems="flex-end">
+
+            <Grid item xs={12} md={6} lg={8} container componet={List}>
+                <Name>{name}</Name>
+                <Position>{position}</Position>
             </Grid>
-            <Grid item xs={4} component={List} container className="contacts" alignItems="center">
-                <Grid item xs={1} ><MailIcon /> </Grid>
-                <Grid item xs={11} >{email}</Grid>
-                <Grid item xs={1} ><GitHubIcon /> </Grid>
-                <Grid item xs={11} >{github}</Grid>
-                {/* <Grid item xs={12} component={ListItem} ><MailIcon /> {email}</Grid>
-                <Grid item xs={12} component={ListItem} ><GitHubIcon /> {github}</Grid> */}
-            </Grid>
-            <Grid item xs={12} className="divider">
-                <Divider variant="fullWidth" />
-            </Grid>
+
+            <Grid
+                item xs={12} md={6} lg={4}
+                component={List}
+                container
+                className="contacts"
+                direction="column"
+                justifyContent="flex-end"
+                alignItems="baseline"
+            >
+                <Contact icon={MailIcon} value={email} />
+                <Contact icon={GitHubIcon} value={github} />
+            </Grid >
+
+            <HeaderDivider />
+
         </Grid >
     )
 };
