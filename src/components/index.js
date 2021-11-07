@@ -1,5 +1,4 @@
 import { Header } from "./Header/Header"
-import { Career } from "./Career/Career"
 import { Education } from "./Education/Education"
 import { EducationItem } from "./EducationItem/EducationItem"
 import { Project } from "./Project/Project"
@@ -9,7 +8,6 @@ import { ExperienceItem } from "./ExperienceItem/ExperienceItem"
 
 export {
     Header,
-    Career,
     Education,
     EducationItem,
     Project,

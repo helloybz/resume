@@ -2,23 +2,30 @@ export var info = {
     "name": "최영범",
     "position": "ML Developer",
     "email": "helloybz@gmail.com",
-    "github": "https://github.com/helloybz",
-    "career": [
-        {
-            "name": "수퍼브",
-            "department": "데이터/AI",
-            "position": "ML Engineer",
-            "from": "2020.07.06.",
-            "to": "2021.08.31."
-        },
-        {
-            "name": "아주대학교 의료원",
-            "department": "생리학교실",
-            "position": "ML Researcher",
-            "from": "2019.11.01.",
-            "to": "2020.06.30."
-        }
-    ],
+    "github": "github.com/helloybz",
+    "career": {
+        "title": "직무 경력",
+        "items":
+            [
+                {
+                    "name": "수퍼브",
+                    "department": "데이터/AI팀",
+                    "position": "ML Engineer",
+                    "from": "2020.07.06.",
+                    "to": "2021.08.31.",
+                    "forInMonth": "13",
+                },
+                {
+                    "name": "아주대학교 의료원",
+                    "department": "생리학교실",
+                    "position": "ML Researcher, 서버관리자",
+                    "from": "2019.11.01.",
+                    "to": "2020.06.30.",
+                    "forInMonth": "8",
+
+                }
+            ]
+    },
     "education": [
         {
             "name": "아주대학교 대학원",
