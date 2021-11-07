@@ -23,13 +23,14 @@ export function ResumeWrapper() {
                     position: "fixed",
                     right: {
                         "xs": "1rem",
-                        "lg": "3rem"
+                        "lg": "25rem"
                     },
                     bottom: {
                         "xs": "1rem",
-                        "lg": "3rem"
+                        "lg": "5rem"
                     },
                     zIndex: "20",
+                    displayPrint: "none"
                 }}
                 onClick={handlePrint}
             >
