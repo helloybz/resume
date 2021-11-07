@@ -4,7 +4,7 @@ export function HeaderDivider() {
     return (
         <Grid item xs={12} sx={{
             "mt": {
-                "xs": 0,
+                "xs": "0",
                 "md": "2rem"
             },
         }}>

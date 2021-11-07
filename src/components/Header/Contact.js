@@ -2,7 +2,14 @@ import { Grid, ListItem, Typography } from "@mui/material";
 
 export function Contact({ icon, value }) {
     return (
-        <Grid container item component={ListItem} sx={{ padding: 0, margin: 0 }}>
+        <Grid
+            item xs={12} component={ListItem}
+            container
+            sx={{
+                "padding": "0",
+                "margin": "0"
+            }}
+        >
             <Grid item xs={1} component={icon}
                 sx={{
                     fontSize: {
