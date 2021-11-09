@@ -1,12 +1,13 @@
 import { Grid, Paper } from "@mui/material";
 
-import { CareerItem, EducationItem, ExperienceItem, Header } from './components'
+import { CareerItem, EducationItem, ExperienceItem, Header, ProjectItem } from './components'
 
 import { info } from './info.js'
 import { BodySectionWrapper } from "./components/BodySectionWrapper";
 
 export function Resume() {
     return (
+
         <Grid container justifyContent="center" >
             <Grid
                 item
@@ -30,8 +31,10 @@ export function Resume() {
                     <BodySectionWrapper content={info.career} itemComponent={CareerItem} />
                     <BodySectionWrapper content={info.education} itemComponent={EducationItem} />
                     <BodySectionWrapper content={info.experience} itemComponent={ExperienceItem} />
+                    <BodySectionWrapper content={info.project} itemComponent={ProjectItem} />
                 </Grid>
             </Grid>
         </Grid>
+
     )
 }

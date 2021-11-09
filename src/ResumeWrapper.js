@@ -12,8 +12,10 @@ export function ResumeWrapper() {
         print: window.print
     });
 
-    const ReferredResume = forwardRef((props, ref) => (
-        <div ref={ref}><Resume /></div>
+    const PrintableResume = forwardRef((props, ref) => (
+        <div ref={ref} >
+            <Resume />
+        </div>
     ))
     const resumeRef = useRef(null)
     return (
@@ -23,7 +25,7 @@ export function ResumeWrapper() {
                     position: "fixed",
                     right: {
                         "xs": "1rem",
-                        "lg": "25rem"
+                        "lg": "10rem"
                     },
                     bottom: {
                         "xs": "1rem",
@@ -36,20 +38,37 @@ export function ResumeWrapper() {
             >
                 <PrintIcon />
             </Fab>
+
             <Grid
                 item
                 xs={12}
                 sx={{
-                    paddingTop: {
+                    "paddingTop": {
                         "xs": "0",
                         "md": "3rem",
                     },
-                    maxWidth: "210mm",
-                    // minHeight: "296mm",
+                    "maxWidth": "210mm",
+                    "display": "none",
+                    "displayPrint": "block",
 
+                }}>
+                <PrintableResume ref={resumeRef} />
+            </Grid>
+
+            <Grid
+                item
+                xs={12}
+                sx={{
+                    "paddingTop": {
+                        "xs": "0",
+                        "md": "3rem",
+                    },
+                    "maxWidth": "210mm",
+                    "display": "block",
+                    "displayPrint": "none",
                 }}
             >
-                <ReferredResume ref={resumeRef} />
+                <Resume />
             </Grid>
         </Grid >
     )
