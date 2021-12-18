@@ -1,7 +1,7 @@
 import { Grid, List, ListItem } from "@mui/material";
 
 
-export function ExperienceItem({ category, items }) {
+export function ExperienceItem({ printable = false, category, items }) {
     return (
         <Grid item xs={12} component={ListItem} container>
             <Grid item xs={9} sx={{ "fontWeight": "450" }}>
@@ -15,10 +15,10 @@ export function ExperienceItem({ category, items }) {
                                 sx={{ "textDecoration": "underline" }}>
                                 {item.what}
                             </Grid>
-                            <Grid item xs={6}>
+                            <Grid item xs={printable ? 6 : 12} md={6}>
                                 {"@" + item.at}
                             </Grid>
-                            <Grid item xs={6}>
+                            <Grid item xs={printable ? 6 : 12} md={6}>
                                 {item.from} ~ {item.to}
                             </Grid>
                         </Grid>

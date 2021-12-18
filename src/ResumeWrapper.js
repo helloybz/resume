@@ -9,17 +9,45 @@ import "./Resume.css";
 export function ResumeWrapper() {
     const handlePrint = useReactToPrint({
         content: () => resumeRef.current,
-        print: window.print
+        // print: window.print
     });
 
     const PrintableResume = forwardRef((props, ref) => (
         <div ref={ref} >
-            <Resume />
+            <Resume printable />
         </div>
     ))
     const resumeRef = useRef(null)
     return (
-        <Grid container justifyContent="center">
+        <Grid className="wrapper" container justifyContent="center" sx={{ padding: { "xs": "0", "md": "3rem 0" } }}>
+            {/* Resume for print */}
+            <Grid
+                item
+                xs={12}
+                sx={{
+                    "paddingTop": {
+                        "xs": "0",
+                        "md": "3rem",
+                    },
+                    "maxWidth": "210mm",
+                    "displayPrint": "flex",
+                    "display": "none",
+                }}
+            >
+                <PrintableResume ref={resumeRef} />
+            </Grid>
+
+            {/* Resume for show */}
+            <Grid
+                item
+                sx={{
+                    "displayPrint": "none",
+                }}
+            >
+                <Resume />
+            </Grid>
+
+            {/* Print Button */}
             <Fab
                 sx={{
                     position: "fixed",
@@ -39,37 +67,6 @@ export function ResumeWrapper() {
                 <PrintIcon />
             </Fab>
 
-            <Grid
-                item
-                xs={12}
-                sx={{
-                    "paddingTop": {
-                        "xs": "0",
-                        "md": "3rem",
-                    },
-                    "maxWidth": "210mm",
-                    "display": "none",
-                    "displayPrint": "block",
-
-                }}>
-                <PrintableResume ref={resumeRef} />
-            </Grid>
-
-            <Grid
-                item
-                xs={12}
-                sx={{
-                    "paddingTop": {
-                        "xs": "0",
-                        "md": "3rem",
-                    },
-                    "maxWidth": "210mm",
-                    "display": "block",
-                    "displayPrint": "none",
-                }}
-            >
-                <Resume />
-            </Grid>
         </Grid >
     )
 }

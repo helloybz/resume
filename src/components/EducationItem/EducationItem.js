@@ -1,7 +1,7 @@
 import { ListItem, Grid, Typography } from "@mui/material";
 
 
-export function EducationItem({ name, major, degree, from, to }) {
+export function EducationItem({ printable = false, name, major, degree, from, to }) {
     return (
         <Grid
             item xs={12} component={ListItem}
@@ -20,13 +20,13 @@ export function EducationItem({ name, major, degree, from, to }) {
                 {major + " " + degree}
             </Grid>
 
-            <Grid item xs={6}
+            <Grid item xs={printable ? 6 : 12} md={6}
                 component={Typography}
             >
                 {name}
             </Grid>
 
-            <Grid item xs={6}
+            <Grid item xs={printable ? 6 : 12} md={6}
                 component={Typography}>
                 {from + " ~ " + to}
             </Grid>
