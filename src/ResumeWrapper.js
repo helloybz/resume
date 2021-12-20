@@ -9,7 +9,6 @@ import "./Resume.css";
 export function ResumeWrapper() {
     const handlePrint = useReactToPrint({
         content: () => resumeRef.current,
-        // print: window.print
     });
 
     const PrintableResume = forwardRef((props, ref) => (

@@ -58,7 +58,7 @@ export function Resume({ printable = false }) {
                         "padding": { "xs": printable ? "1rem 2rem" : "0", "md": "1rem 2rem" }
                     }}>
 
-                    {info.project.items.slice(0, 1).map((item, i) => {
+                    {info.project.items.slice(0, 3).map((item, i) => {
                         return (
                             <ProjectItem key={i} printable={printable} name={item.name} at={item.at} description={item.description} />
                         )
@@ -83,35 +83,6 @@ export function Resume({ printable = false }) {
                     container
                     sx={{
                         "padding": { "xs": printable ? "1rem 2rem" : "0", "md": "1rem 2rem" }
-                    }}>
-
-                    {info.project.items.slice(1, 3).map((item, i) => {
-                        return (
-                            <ProjectItem key={i} printable={printable} name={item.name} at={item.at} description={item.description} />
-                        )
-                    })}
-                </Grid>
-            </Grid>
-
-            <Grid className="page_4" item container justifyContent='flex-start' alignItems="flex-start" component={printable ? null : Paper} sx={{
-                maxWidth: '210mm', minHeight: "297mm", padding: { "xs": "1rem", "md": "3rem" }, marginBottom: printable ? 0 : '1rem', display: "block"
-            }}>
-                <Grid
-                    item xs={12}
-                    sx={{
-                        "padding": { "xs": '0.5rem', "md": "1rem 2rem" },
-                        "fontSize": "h5.fontSize",
-                        "fontWeight": "bold",
-                    }}
-                >
-                    {info.project.title}
-                </Grid>
-                <Grid
-                    item
-                    xs={12}
-                    container
-                    sx={{
-                        "padding": { "xs": printable ? "1rem 2rem" : "0", "md": "1rem 2rem" },
                     }}>
 
                     {info.project.items.slice(3, 6).map((item, i) => {
