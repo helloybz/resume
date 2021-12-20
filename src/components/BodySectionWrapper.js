@@ -2,7 +2,7 @@ import { Grid, List } from "@mui/material";
 
 
 export function BodySectionWrapper({ printable = false, content, itemComponent }) {
-
+    console.log(content)
     var ItemComponent = itemComponent
 
     return (
