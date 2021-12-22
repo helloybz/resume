@@ -52,25 +52,24 @@ export var info = {
                 "name": "Note Pattern Generator",
                 "at": "수퍼브",
                 "duration": "2020.07. ~ 2021.07. (13개월)",
+                "skillset": ["PyTorch", "librosa", "torchaudio", "AWS", "Git"],
                 "description": `\
                 주어진 음악에 맞는 리듬게임용 노트 패턴 생성 모델을 확보하는 프로젝트입니다.
                 수퍼브 재직 당시 컨텐츠 생산효율을 높히고자, 직접 제안하고 채택되어 진행된 프로젝트입니다.
                 노트의 타이밍을 특정하는데 성공해 노트 패턴 제작팀의 작업 시간을 약 30%줄였습니다.
                 아이디어 제안, 문제 정의, 데이터 정제, 사전연구 조사, 모델 개발, 실험을 맡았습니다.
-                PyTorch로 모델을 구현하고, AWS로 데이터 관리와 모델학습을 했습니다.
-                연구 목적이 아닌 기업의 이익을 위한 프로젝트의 성격을 이해할 수 있었습니다.
-                AWS나 GCP 같은 클라우드 서비스를 활용하는 경험을 했습니다.\
+                연구 목적이 아닌 기업의 이익을 위한 프로젝트의 성격을 이해할 수 있었습니다.\
                 `
             },
             {
                 "name": "Batch Integration with Adversarial AutoEncoder",
                 "at": "아주대학교 의료원",
                 "duration": "2020.04. ~ 2020.06. (3개월)",
+                "skillset": ["PyTorch", "Git"],
                 "description": `\
                 생물정보학 분야에서 고질적인 문제인 Batch Effect를 Adversarial AutoEncoder를 활용해 해결하는 연구입니다.
                 딥러닝을 활용한 생물정보학 연구에 대한 교수님의 요구에 따라 아이디어를 제안하고 시작한 연구입니다.
                 사전연구 조사, 모델 개발, 실험을 맡았습니다.
-                PyTorch로 모델을 구현했습니다.
                 생소한 분야의 도메인 지식을 효율적으로 익히고 ML을 접목하는 능력을 얻을 수 있었습니다.\
                 `,
             },
@@ -78,10 +77,10 @@ export var info = {
                 "name": "Content- and Link-Aware Node Embedding",
                 "at": "아주대학교 대학원",
                 "duration": "2018.02. ~ 2019.06. (18개월)",
+                "skillset": ["PyTorch", "numpy", "Git"],
                 "description": `\
                 석사 학위 논문으로, 주어진 네트워크 내 존재하는 노드들의 연결관계뿐만 아니라 노드의 고유 특성까지도 함께 반영한 임베딩을 구하는 메소드를 제안하는 연구입니다.
                 노드 분류 실험에서 메소드를 적용한 후 정확도가 약 10%~20% 상승했습니다.
-                PyTorch를 이용해 구현했습니다.
                 그래프이론, 확률론 등 머신러닝에 꼭 필요한 이론적 토대를 다질 수 있었습니다.\
                 `,
             },
@@ -89,6 +88,7 @@ export var info = {
                 "name": "Dementia Matrix",
                 "at": "아주대학교",
                 "duration": "2016.02. ~ 2016.09. (8개월)",
+                "skillset": ["numpy", "scikit-learn", "flask", "nginx"],
                 "description": `\
                 치매 환자의 진단 데이터와 환자의 치매 진행 양상을 효과적으로 시각화하여, 치매 진단 시 의사결정에 도움을 주는 시각화 방법에 관한 연구입니다.
                 이 연구는 IEEE VIS 2016에서 열린 BioVis workshop 포스터 부분에 채택되었습니다.

@@ -1,15 +1,18 @@
 import { Grid, List, ListItem, ListItemText, Typography } from "@mui/material";
 
 
-export function ProjectItem({ printable = false, name, at, duration, description }) {
+export function ProjectItem({ printable = false, name, at, duration, skillset = '', description }) {
     var descriptionByLine = description.split('\n')
     return (
         <Grid item xs={12} container sx={{ padding: { "xs": printable ? "0" : "1rem 0", "md": "0" } }}>
             <Grid item xs={12} component={Typography} sx={{ "fontSize": "h6.fontSize" }}>
                 {name}
             </Grid>
-            <Grid item xs={12} component={Typography} sx={{ "fontSize": "1rem" }}>
+            <Grid item xs={printable ? 5 : 12} md={5} component={Typography} sx={{ "fontSize": "1rem" }}>
                 기간: {duration}
+            </Grid>
+            <Grid item xs={printable ? 7 : 12} md={7} component={Typography} sx={{ "fontSize": "1rem" }}>
+                Skill Set: {skillset.join(', ')}
             </Grid>
 
             <Grid item xs={12} component={List} container sx={{ "marginTop": "0.5rem" }}>
