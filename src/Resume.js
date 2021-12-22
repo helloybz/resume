@@ -55,12 +55,12 @@ export function Resume({ printable = false }) {
                     xs={12}
                     container
                     sx={{
-                        "padding": { "xs": printable ? "1rem 2rem" : "0", "md": "1rem 2rem" }
+                        "padding": { "xs": printable ? "1rem 2rem" : "0", "md": "1rem 2rem" },
                     }}>
 
                     {info.project.items.slice(0, 3).map((item, i) => {
                         return (
-                            <ProjectItem key={i} printable={printable} name={item.name} at={item.at} description={item.description} />
+                            <ProjectItem key={i} printable={printable} name={item.name} at={item.at} duration={item.duration} description={item.description} />
                         )
                     })}
                 </Grid>
@@ -87,7 +87,7 @@ export function Resume({ printable = false }) {
 
                     {info.project.items.slice(3, 6).map((item, i) => {
                         return (
-                            <ProjectItem key={i} printable={printable} name={item.name} at={item.at} description={item.description} />
+                            <ProjectItem key={i} printable={printable} name={item.name} at={item.at} duration={item.duration} description={item.description} />
                         )
                     })}
                 </Grid>
