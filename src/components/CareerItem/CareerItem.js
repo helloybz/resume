@@ -1,7 +1,8 @@
-import { ListItem, Grid, Typography } from "@mui/material";
+import { List, ListItemText, ListItem, Grid, Typography } from "@mui/material";
 
 
-export function CareerItem({ printable = false, name, department, from, to, position, forInMonth }) {
+export function CareerItem({ printable = false, name, department, from, to, position, forInMonth, reasonResign, description }) {
+    var descriptions = description.split('\n')
     return (
         <Grid
             item xs={12} component={ListItem}
@@ -10,7 +11,7 @@ export function CareerItem({ printable = false, name, department, from, to, posi
             rowSpacing={1}
             sx={{ "mb": "0.5rem" }}
         >
-            <Grid container item xs={12} alignItems="baseline">
+            <Grid container item xs={6} alignItems="baseline">
                 <Grid item xs="auto" component={Typography}
                     sx={{
                         "fontSize": "1.15rem",
@@ -28,13 +29,30 @@ export function CareerItem({ printable = false, name, department, from, to, posi
                 </Grid>
             </Grid>
 
-            <Grid item xs={printable ? 6 : 12} md={6}>
+            {/* <Grid item xs={printable ? 6 : 12} md={6}>
                 {position}
-            </Grid>
+            </Grid> */}
 
-            <Grid item container xs={printable ? 6 : 6} >
+            <Grid item container xs={printable ? 6 : 6} sx={{ marginBottom: "0.5rem" }}>
                 <Grid item xs="auto" sx={{ "mr": 1 }}>{from + " ~ " + to}</Grid>
                 <Grid item sx={{ display: { "xs": printable ? "flex" : "none", "md": "flex" } }} > ({forInMonth + "개월"})</Grid>
+            </Grid>
+            <Grid item xs={12} container component={List}>
+                {descriptions.map((item, i) => {
+                    return (<Grid
+                        item
+                        container alignItems="flex-start"
+                        columns={36}
+                        component={ListItem}
+                        sx={{ "padding": 0, "marginBottom": "0.5rem" }}
+                        key={i}
+                    >
+                        <Grid item xs={'auto'} sx={{ "marginRight": { "xs": "0.1rem", "md": '0.2rem' } }}>-</Grid>
+                        <Grid item xs={35} component={ListItemText}>
+                            {item.trim()}
+                        </Grid>
+                    </Grid>)
+                })}
             </Grid>
         </Grid >
     )
