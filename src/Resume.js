@@ -40,7 +40,7 @@ export function Resume({ printable = false }) {
                     <BodySectionWrapper printable={printable} content={info.introduce} itemComponent={IntroduceItem} />
                     <BodySectionWrapper printable={printable} content={info.skillset} itemComponent={SkillSetItem} />
                     <BodySectionWrapper printable={printable} content={info.career} itemComponent={CareerItem} />
-                    <BodySectionWrapper printable={printable} content={info.education} itemComponent={EducationItem} />
+                    {/* <BodySectionWrapper printable={printable} content={info.education} itemComponent={EducationItem} /> */}
                 </Grid>
             </Grid>
         </Grid >

@@ -43,10 +43,10 @@ export var info = {
                     "position": "ML Engineer",
                     "from": "2020.07.",
                     "to": "2021.08.",
-                    "forInMonth": "13",
+                    "forInMonth": "14",
                     "reasonResign": ", 경영상 인원감축으로 퇴사",
                     "description": `\
-                    Note Pattern Generator  (2020. 7. ~ 2021. 7.)\
+                    Note Pattern Generator  (2020.07. ~ 2021.07., 13개월)\
                     \t- HYBE 아티스트 IP기반 리듬게임의 노트패턴 컨텐츠 생성 모델을 확보하는 프로젝트\
                     \t&h- 콘텐츠 제작 인력 부족 문제 해결을 위해 직접 프로젝트 제안\
                     \t- 문제 정의, 데이터 정제, 사전연구 조사, 모델 개발, 실험을 수행\
@@ -66,7 +66,7 @@ export var info = {
                     "forInMonth": "8",
                     "reasonResign": ", 수퍼브로 이직을 위해 퇴사",
                     "description": `\
-                    Batch Integration with Adversarial AutoEncoder (2020.04. ~ 2020.06.)\
+                    Batch Integration with Adversarial AutoEncoder (2020.04. ~ 2020.06., 3개월)\
                     \t- 생물정보학 분야의 고질적인 문제인 Batch Effect*를 해결하는 기법 연구\
                     \t- 딥러닝 기반 유전체 데이터 연구의 사내 수요에 따라 연구 아이디어 제안\
                     \t&h- AutoEncoder 기반 모델을 도입해 보유 데이터의 Labeling 신뢰도가 낮은 문제 극복\
@@ -84,14 +84,14 @@ export var info = {
                 },
                 {
                     "name": "석사 과정",
-                    "department": "LAMDA Lab.",
+                    "department": "(졸업) LAMDA Lab.",
                     "position": "석사 과정",
-                    "from": "2017.09.",
-                    "to": "2019.08.",
+                    "from": "'17.09.",
+                    "to": "'19.08.",
                     "forInMonth": "24",
                     "reasonResign": "",
                     "description": `\
-                    Content- and Link-Aware Node Embedding in Graphs (2018.02. ~ 2019.06.)\
+                    Content- and Link-Aware Node Embedding in Graphs ('18.02. ~ '19.06., 17개월)\
                     \t- 필요하다면 학습파라미터 없이도 Graph Convolution을 수행하여 노드 임베딩을 구하는 기법 제안\
                     \t&h- 학습 파라미터를 두는 경우, Curriculum Training이 가능하토록 하는 Negative Sampling 기법 제안\
                     \t&h- Deepwalk, Node2Vec, LINE 대비 노드 분류 실험 정확도 5%~18% 퍼센트 향상\
@@ -100,8 +100,8 @@ export var info = {
 
                     Python 및 기계학습 실습 강사\
                     \t- 객체지향프로그래밍 Python 실습 @아주대학교 (2017.09. ~ 2019.06.)\
-                    \t- 기계학습 Python 실습 @아주대학교 (2018.09. ~ 2018.10.)\
-                    \t- 의생명정보학 기계학습 Python 실습 @서울대학교 (2018.12. ~ 2018.12.)\
+                    \t- 기계학습 Python 실습 @아주대학교 (2020.09. ~ 2018.10.)\
+                    \t- 의생명정보학 기계학습 Python 실습 @서울대학교 (2020.12. ~ 2020.12.)\
                     `
                 }
             ]
@@ -113,15 +113,15 @@ export var info = {
                 "name": "아주대학교 대학원 LAMDA Lab.",
                 "major": "컴퓨터공학",
                 "degree": "석사",
-                "from": "2017.09.",
-                "to": "2019.08."
+                "from": "'17.09.",
+                "to": "'19.08."
             },
             {
                 "name": "아주대학교 정보통신대학",
                 "major": "미디어학",
                 "degree": "학사",
-                "from": "2011.03.",
-                "to": "2017.08."
+                "from": "'11.03.",
+                "to": "'17.08."
             }
         ]
     },
