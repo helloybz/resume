@@ -86,8 +86,8 @@ export var info = {
                     "name": "석사 과정",
                     "department": "(졸업) LAMDA Lab.",
                     "position": "석사 과정",
-                    "from": "'17.09.",
-                    "to": "'19.08.",
+                    "from": "2017.09.",
+                    "to": "2019.08.",
                     "forInMonth": "24",
                     "reasonResign": "",
                     "description": `\
