@@ -21,6 +21,7 @@ export function Resume({ printable = false }) {
                         printable={printable}
                         name={info.name}
                         position={info.position}
+                        hooks={info.hooks}
                         cellPhone={info.cellPhone}
                         email={info.email}
                         github={info.github}
@@ -33,104 +34,15 @@ export function Resume({ printable = false }) {
                     xs={12}
                     container
                     sx={{
-                        "padding": { "xs": printable ? "1rem 2rem" : "0", "md": "1rem 2rem" }
+                        "padding": { "xs": printable ? "1rem 2rem" : "0", "md": "1rem 1.1rem" }
                     }}
                 >
                     <BodySectionWrapper printable={printable} content={info.introduce} itemComponent={IntroduceItem} />
-                    <BodySectionWrapper printable={printable} content={info.career} itemComponent={CareerItem} />
                     <BodySectionWrapper printable={printable} content={info.skillset} itemComponent={SkillSetItem} />
-                </Grid>
-            </Grid>
-            <Grid className="page_3" item container component={printable ? null : Paper} sx={{ maxWidth: '210mm', minHeight: "297mm", padding: { "xs": "1rem", "md": "3rem" }, marginBottom: printable ? 0 : '1rem', display: "block" }}>
-                <Grid
-                    item
-                    xs={12}
-                    container
-                    sx={{
-                        "padding": { "xs": printable ? "1rem 2rem" : "0", "md": "1rem 2rem" }
-                    }}
-                >
-                    <BodySectionWrapper printable={printable} content={info.experience} itemComponent={ExperienceItem} />
+                    <BodySectionWrapper printable={printable} content={info.career} itemComponent={CareerItem} />
                     <BodySectionWrapper printable={printable} content={info.education} itemComponent={EducationItem} />
                 </Grid>
-                <Grid
-                    item xs={12}
-                    sx={{
-                        "padding": { "xs": '0.5rem', "md": "1rem 2rem" },
-                        "fontSize": "h5.fontSize",
-                        "fontWeight": "bold",
-                    }}
-                >
-                    {info.project.title}
-                </Grid>
-                <Grid
-                    item
-                    xs={12}
-                    container
-                    sx={{
-                        "padding": { "xs": printable ? "1rem 2rem" : "0", "md": "1rem 2rem" },
-                    }}>
-
-                    {info.project.items.slice(0, 1).map((item, i) => {
-                        return (
-                            <ProjectItem key={i} printable={printable} name={item.name} at={item.at} skillset={item.skillset} duration={item.duration} description={item.description} />
-                        )
-                    })}
-                </Grid>
             </Grid>
-            <Grid className="page_3" item container component={printable ? null : Paper} sx={{ maxWidth: '210mm', minHeight: "297mm", padding: { "xs": "1rem", "md": "3rem" }, marginBottom: printable ? 0 : '1rem', display: "block" }}>
-                <Grid
-                    item xs={12}
-                    sx={{
-                        "padding": { "xs": '0.5rem', "md": "1rem 2rem" },
-                        "fontSize": "h5.fontSize",
-                        "fontWeight": "bold",
-                    }}
-                >
-                    {info.project.title}
-                </Grid>
-                <Grid
-                    item
-                    xs={12}
-                    container
-                    sx={{
-                        "padding": { "xs": printable ? "1rem 2rem" : "0", "md": "1rem 2rem" },
-                    }}>
-
-                    {info.project.items.slice(1, 4).map((item, i) => {
-                        return (
-                            <ProjectItem key={i} printable={printable} name={item.name} at={item.at} skillset={item.skillset} duration={item.duration} description={item.description} />
-                        )
-                    })}
-                </Grid>
-            </Grid>
-
-            {/* <Grid className="page_3" item container component={printable ? null : Paper} sx={{ maxWidth: '210mm', minHeight: "297mm", padding: { "xs": "1rem", "md": "3rem" }, marginBottom: printable ? 0 : '1rem', display: "block" }}>
-                <Grid
-                    item xs={12}
-                    sx={{
-                        "padding": { "xs": '0.5rem', "md": "1rem 2rem" },
-                        "fontSize": "h5.fontSize",
-                        "fontWeight": "bold",
-                    }}
-                >
-                    {info.project.title}
-                </Grid>
-                <Grid
-                    item
-                    xs={12}
-                    container
-                    sx={{
-                        "padding": { "xs": printable ? "1rem 2rem" : "0", "md": "1rem 2rem" }
-                    }}>
-
-                    {info.project.items.slice(3, 6).map((item, i) => {
-                        return (
-                            <ProjectItem key={i} printable={printable} name={item.name} at={item.at} skillset={item.skillset} duration={item.duration} description={item.description} />
-                        )
-                    })}
-                </Grid>
-            </Grid> */}
         </Grid >
 
     )
