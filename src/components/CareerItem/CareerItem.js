@@ -1,4 +1,4 @@
-import { Box, List, ListItemText, ListItem, Grid, Typography } from "@mui/material";
+import { Box, List, ListItem, Grid, Typography } from "@mui/material";
 
 function HighlightedText({ text }) {
     return (

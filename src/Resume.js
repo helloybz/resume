@@ -1,6 +1,6 @@
 import { Grid, Paper } from "@mui/material";
 
-import { CareerItem, EducationItem, ExperienceItem, IntroduceItem, SkillSetItem, Header, ProjectItem } from './components'
+import { CareerItem, IntroduceItem, SkillSetItem, Header } from './components'
 
 import { info } from './info.js'
 import { BodySectionWrapper } from "./components/BodySectionWrapper";

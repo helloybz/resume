@@ -1,5 +1,4 @@
-import { ContentPaste } from "@mui/icons-material";
-import { List, ListItemText, ListItem, Grid, Typography } from "@mui/material";
+import { ListItem, Grid } from "@mui/material";
 
 
 export function IntroduceItem({ printable = false, description }) {
