@@ -29,12 +29,9 @@ export var info = {
                     "forInMonth": "4",
                     "reasonResign": "",
                     "description": `\
-                    논문 구현\
-                    \tProgressiveGAN (Vision), Demucs (MIR), Deepwalk(Graph, rework)
-                    추천 시스템 분야 조사\
-                    \tGraphSAGE, PinSAGE, STAR-GCN, SR-GNN
-                    기타\
-                    \tGitHub Flow 학습, Google Cloud Platform 활용 연습\
+                    \t- 논문 구현: ProgressiveGAN (Vision), Demucs (MIR)\
+                    \t- 추천 시스템 분야 GNN 리서치: GraphSAGE, PinSAGE, STAR-GCN, SR-GNN\
+                    \t- GitHub Flow 학습, Google Cloud Platform 활용 연습\
                     `
                 },
                 {
