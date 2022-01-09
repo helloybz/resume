@@ -1,6 +1,6 @@
 export var info = {
     "name": "최영범",
-    "position": "ML 연구원",
+    "position": "ML 개발자",
     "hooks": "문제를 해결하는",
     "email": "helloybz@gmail.com",
     "github": "https://github.com/helloybz",
@@ -11,7 +11,7 @@ export var info = {
         "items": [{
             "description": `\
             나와 조직의 목표와 성취가 같아지는 '경지'에 이르기 위해 팀워크와 몰입을 가장 중요시하며 일합니다.
-            분야를 가리지 않고, ML이 필요한 곳에서 ML 연구원으로서 주도적으로 기여를 해왔습니다.
+            분야를 가리지 않고, ML이 필요한 곳에서 ML 개발자로서 주도적으로 기여를 해왔습니다.
             지금은 효율적인 GNN 기법을 연구한 경험을 살려, 대규모 추천시스템 프로젝트에 참여하고 싶습니다.
             `
         }],
@@ -67,8 +67,8 @@ export var info = {
                     \t- 생물정보학 분야의 고질적인 문제인 Batch Effect*를 해결하는 기법 연구\
                     \t- 딥러닝 기반 유전체 데이터 연구의 사내 수요에 따라 연구 아이디어 제안\
                     \t&h- AutoEncoder 기반 모델을 도입해 보유 데이터의 Labeling 신뢰도가 낮은 문제 극복\
-                    \t- Adversarial Learning을 도입해 naive한 feature 분포를 가정하는 사전 연구 한계 극복\
-                    \t- 연구 제안, 데이터 정제, 모델 구현 역할을 맡음\
+                    \t&h- Adversarial Learning을 도입해 naive한 feature 분포를 가정하는 사전 연구 한계 극복\
+                    \t- 연구 제안, 데이터 정제, 모델 구현을 수행\
                     \t- 심도있는 GAN활용 능력 획득\
                     \t- PyTorch기반 구현\
                     \t*BatchEffect: 두 유전체 데이터셋에 노이즈(온도, 습도, 실험자 등 실험 외적환경)가 들어가 유의미한 생물학적차이를 흐리는 현상\
@@ -89,8 +89,8 @@ export var info = {
                     "reasonResign": "",
                     "description": `\
                     Content- and Link-Aware Node Embedding in Graphs ('18.02. ~ '19.06., 17개월)\
-                    \t- 필요하다면 학습파라미터 없이도 Graph Convolution을 수행하여 노드 임베딩을 구하는 기법 제안\
-                    \t&h- 학습 파라미터를 두는 경우, Curriculum Training이 가능하토록 하는 Negative Sampling 기법 제안\
+                    \t&h- 임베딩 전파와 모델 학습을 분리한 Iterative GNN 기법 제안\
+                    \t&h- Curriculum Training 효과를 포함한 Negative Sampling 기법 제안\
                     \t&h- Deepwalk, Node2Vec, LINE 대비 노드 분류 실험 정확도 5%~18% 퍼센트 향상\
                     \t- Graph Theory, Probability Theory, PyTorch 활용 능력 획득\
                     \t- PyTorch기반 구현\
