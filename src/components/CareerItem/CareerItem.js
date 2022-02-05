@@ -36,7 +36,15 @@ export function CareerItem({ printable = false, name, department, from, to, posi
 
             <Grid item container xs={printable ? 12 : 12} sx={{ marginBottom: "0.5rem" }}>
                 <Grid item xs="auto" sx={{ "mr": 1 }}>{from + " ~ " + to} </Grid>
-                <Grid item sx={{ display: { "xs": printable ? "flex" : "none", "md": "flex" } }} > ({forInMonth + "개월"}{reasonResign})</Grid>
+                <Grid item
+                    sx={{
+                        display: {
+                            "xs": printable ? "flex" : "none",
+                            "md": forInMonth === "" ? "none" : "flex"
+                        }
+                    }} >
+                    ({forInMonth + "개월"}{reasonResign})
+                </Grid>
             </Grid>
 
             <Grid item xs={12} container component={List}>

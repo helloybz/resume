@@ -1,7 +1,8 @@
 export var info = {
     "name": "최영범",
-    "position": "ML 개발자",
-    "hooks": "문제를 해결하는",
+    "position": "ML Engineer",
+    // "hooks": "문제를 해결하는",
+    "hooks": "",
     "email": "helloybz@gmail.com",
     "github": "https://github.com/helloybz",
     "blog": "https://helloybz.github.io",
@@ -11,8 +12,8 @@ export var info = {
         "items": [{
             "description": `\
             나와 조직의 목표와 성취가 같아지는 '경지'에 이르기 위해 팀워크와 몰입을 가장 중요시하며 일합니다.
-            분야를 가리지 않고, ML이 필요한 곳에서 ML 개발자로서 주도적으로 기여를 해왔습니다.
-            지금은 효율적인 GNN 기법을 연구한 경험을 살려, 대규모 추천시스템 프로젝트에 참여하고 싶습니다.
+            분야를 가리지 않고, ML이 필요한 곳에서 ML 연구원으로서 주도적으로 기여를 해왔습니다.
+            지금은 효율적인 GNN 기법을 연구한 경험을 살려, 대규모 추천시스템 프로젝트에 참여하고 있습니다.
             `
         }],
     },
@@ -21,18 +22,14 @@ export var info = {
         "items":
             [
                 {
-                    "name": "퇴사 후",
-                    "department": "",
-                    "position": "",
-                    "from": "2020.09.01.",
+                    "name": "요기요",
+                    "department": "R&D Center",
+                    "position": "ML Engineer",
+                    "from": "2022.02.",
                     "to": "현재",
-                    "forInMonth": "4",
+                    "forInMonth": "",
                     "reasonResign": "",
-                    "description": `\
-                    \t- 논문 구현: ProgressiveGAN (Vision), Demucs (MIR)\
-                    \t- 추천 시스템 분야 GNN 리서치: GraphSAGE, PinSAGE, STAR-GCN, SR-GNN\
-                    \t- GitHub Flow 학습, Google Cloud Platform 활용 연습\
-                    `
+                    "description": ``
                 },
                 {
                     "name": "수퍼브",
